@@ -20,6 +20,9 @@ class EntradaTexto
 	*/
 	public function adicionar($texto)
     {
+        if(!(trim($texto))){
+            return false;
+        }
         $sql = $this->conn->prepare('INSERT INTO entradas_valores (descricao) VALUES (:texto);');
         $sql->bindValue(':texto', $texto, PDO::PARAM_STR);
         $sql->execute();
