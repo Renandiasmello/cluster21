@@ -31,7 +31,7 @@ if(isset($_POST['submit'])){
                         <label class="control-label">Descrição:</label>
                         <div class="controls">
                             <input type="text" class="form-control input1" name="palindromo" id="palindromo" aria-describedby="palindromo" 
-				    			placeholder="Ex.: Anna, 1235321" value="<?php echo isset($_POST['palindromo']) ? $_POST['palindromo'] : '' ?>" required>
+				    			placeholder="Ex.: Anna, 1235321" value="<?php echo isset($_POST['palindromo']) ? $_POST['palindromo'] : '' ?>" autocomplete="off" required>
                             <span class="help-inline"></span>
                         </div>
                     </div>	
